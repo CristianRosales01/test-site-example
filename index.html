@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Velocità GT | Auto Deportiva</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav">
+        <div class="brand">Velocità GT</div>
+        <div class="nav-links">
+          <a href="#model">Modelo</a>
+          <a href="#galeria">Galería</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+      </nav>
+      <div class="hero-content">
+        <div class="hero-text">
+          <p class="tag">Edición Deportiva 2025</p>
+          <h1>El auto deportivo que domina cada curva.</h1>
+          <p>
+            Diseño aerodinámico, potencia híbrida y una experiencia de conducción
+            que acelera tus sentidos.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#contacto">Solicitar demo</a>
+            <a class="btn secondary" href="#galeria">Ver galería</a>
+          </div>
+        </div>
+        <div class="hero-card" id="model">
+          <h2>Velocidad del primer modelo</h2>
+          <div class="stats">
+            <div>
+              <span class="stat-number">350</span>
+              <span class="stat-label">km/h</span>
+            </div>
+            <div>
+              <span class="stat-number">2.9</span>
+              <span class="stat-label">0-100 en segundos</span>
+            </div>
+            <div>
+              <span class="stat-number">780</span>
+              <span class="stat-label">HP híbridos</span>
+            </div>
+          </div>
+          <p>
+            El primer Velocità GT establece la referencia en su categoría con
+            velocidad máxima de 350 km/h y control activo en pista.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <section class="carousel" id="galeria">
+      <div class="section-title">
+        <h2>Carrousel de imágenes</h2>
+        <p>Explora cada ángulo del deportivo con un giro automático.</p>
+      </div>
+      <div class="carousel-wrapper" aria-label="Carrusel de imágenes">
+        <button class="carousel-btn" data-action="prev" aria-label="Anterior">
+          ‹
+        </button>
+        <div class="carousel-track">
+          <article class="carousel-slide is-active">
+            <img
+              src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80"
+              alt="Auto deportivo rojo en carretera"
+            />
+            <div class="slide-caption">Diseño agresivo para dominar la pista.</div>
+          </article>
+          <article class="carousel-slide">
+            <img
+              src="https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1200&q=80"
+              alt="Auto deportivo plateado en estudio"
+            />
+            <div class="slide-caption">Iluminación LED y silueta futurista.</div>
+          </article>
+          <article class="carousel-slide">
+            <img
+              src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80"
+              alt="Auto deportivo negro en pista nocturna"
+            />
+            <div class="slide-caption">Tecnología híbrida para máxima velocidad.</div>
+          </article>
+        </div>
+        <button class="carousel-btn" data-action="next" aria-label="Siguiente">
+          ›
+        </button>
+      </div>
+      <div class="carousel-dots" role="tablist">
+        <button class="dot is-active" data-index="0" aria-label="Imagen 1"></button>
+        <button class="dot" data-index="1" aria-label="Imagen 2"></button>
+        <button class="dot" data-index="2" aria-label="Imagen 3"></button>
+      </div>
+    </section>
+
+    <section class="contact" id="contacto">
+      <div class="section-title">
+        <h2>Formulario de contacto</h2>
+        <p>Agenda una prueba de manejo o solicita más información.</p>
+      </div>
+      <form class="contact-form">
+        <div class="form-row">
+          <label>
+            Nombre completo
+            <input type="text" name="name" placeholder="Tu nombre" required />
+          </label>
+          <label>
+            Correo electrónico
+            <input type="email" name="email" placeholder="tucorreo@email.com" required />
+          </label>
+        </div>
+        <div class="form-row">
+          <label>
+            Teléfono
+            <input type="tel" name="phone" placeholder="+34 600 000 000" />
+          </label>
+          <label>
+            Ciudad
+            <input type="text" name="city" placeholder="Madrid, CDMX, Buenos Aires" />
+          </label>
+        </div>
+        <label>
+          Mensaje
+          <textarea name="message" rows="4" placeholder="Cuéntanos qué buscas en tu auto deportivo." required></textarea>
+        </label>
+        <button class="btn primary" type="submit">Enviar solicitud</button>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <p>Velocità GT © 2025 · Potencia y elegancia para la nueva generación.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
